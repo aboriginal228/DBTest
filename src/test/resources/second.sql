@@ -1,0 +1,1 @@
+select p.name as project, count(t.name) as tests_count from test t join project p on t.project_id = p.id group by p.name;
